@@ -7,7 +7,7 @@ import redis.clients.jedis.ShardedJedis;
 import redis.clients.jedis.ShardedJedisPool;
 
 /**
- * 操作rdis
+ * 操作rdis啊啊
  * 
  * @author LAPLACE
  *
