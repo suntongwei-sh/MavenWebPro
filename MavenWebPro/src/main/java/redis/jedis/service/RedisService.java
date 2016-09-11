@@ -15,7 +15,7 @@ public class RedisService {
 	public <T> T execute(Function<ShardedJedis, T> fun) {
 		ShardedJedis shardedJedis = null;
 		try {
-			// 从连接池中获取到jedis分片对象
+			// 从连接池中获取到jedis 分片对象
 			shardedJedis = shardedJedisPool.getResource();
 			return fun.callback(shardedJedis);
 		} finally {
