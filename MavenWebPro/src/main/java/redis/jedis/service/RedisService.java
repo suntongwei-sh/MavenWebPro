@@ -6,6 +6,12 @@ import org.springframework.stereotype.Service;
 import redis.clients.jedis.ShardedJedis;
 import redis.clients.jedis.ShardedJedisPool;
 
+/**
+ * 操作rdis
+ * 
+ * @author LAPLACE
+ *
+ */
 @Service
 public class RedisService {
 
