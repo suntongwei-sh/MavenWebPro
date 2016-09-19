@@ -12,6 +12,7 @@ import com.entity.Student;
 public class StudentController {
 	@RequestMapping(method = RequestMethod.GET)
 	@ResponseBody
+	// 返回json
 	public Student test_1() {
 		Student student = new Student();
 		student.setAge("14");
