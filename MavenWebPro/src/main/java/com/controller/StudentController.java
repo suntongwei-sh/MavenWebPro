@@ -15,10 +15,10 @@ public class StudentController {
 	// 返回json
 	public Student test_1() {
 		Student student = new Student();
-		student.setAge("14");
+		student.setAge(14);
 		student.setId(12);
 		student.setName("AAA");
-		student.setSex("male");
+		student.setSex(1);
 		System.out.println("我是get请求");
 		return student;
 	}
