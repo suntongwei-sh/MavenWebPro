@@ -3,8 +3,8 @@ package com.entity;
 public class Student {
 	private Integer id;
 	private String name;
-	private String age;
-	private String sex;
+	private Integer age;
+	private Integer sex;
 
 	public String getName() {
 		return name;
@@ -14,19 +14,19 @@ public class Student {
 		this.name = name;
 	}
 
-	public String getAge() {
+	public Integer getAge() {
 		return age;
 	}
 
-	public void setAge(String age) {
+	public void setAge(Integer age) {
 		this.age = age;
 	}
 
-	public String getSex() {
+	public Integer getSex() {
 		return sex;
 	}
 
-	public void setSex(String sex) {
+	public void setSex(Integer sex) {
 		this.sex = sex;
 	}
 
