@@ -6,6 +6,19 @@ public class Student {
 	private Integer age;
 	private Integer sex;
 
+	public Student() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Student(Integer id, String name, Integer age, Integer sex) {
+
+		this.id = id;
+		this.name = name;
+		this.age = age;
+		this.sex = sex;
+	}
+
 	public String getName() {
 		return name;
 	}
