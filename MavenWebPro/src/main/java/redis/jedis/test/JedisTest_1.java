@@ -18,8 +18,8 @@ public class JedisTest_1 {
 			jedis = jedisPool.getResource();
 			jedis.set("rediskey3", "redisvalue1");
 			jedis.set("rediskey4", "redisvalue2");
-			System.out.println(jedis.get("rediskey1"));
-			System.out.println(jedis.get("rediskey2"));
+			System.out.println(jedis.get("rediskey3"));
+			System.out.println(jedis.get("rediskey4"));
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
