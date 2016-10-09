@@ -21,10 +21,9 @@
 
 	<!-- 扫描注解 需去除controller，如果不去除会影响事务管理的。 -->
 	<context:component-scan base-package="com">
-		<context:exclude-filter type="annotation"
-			expression="org.springframework.stereotype.Controller" />
+		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller" />
 	</context:component-scan>
-	<context:component-scan base-package="redis.jedis.service" />
+	<context:component-scan base-package="redis.jedis.*" />
 	<!-- jdbc.properties文件加载 -->
 	<bean
 		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
