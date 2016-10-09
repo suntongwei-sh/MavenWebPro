@@ -5,6 +5,12 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/**
+ * 线程安全的时间格式化
+ * 
+ * @author admin
+ *
+ */
 public class DateFormatUtils {
 	private static final String date_format_1 = "yyyy-MM-dd HH:mm:ss";
 	private static ThreadLocal<DateFormat> threadLocal = new ThreadLocal<DateFormat>();
