@@ -53,8 +53,7 @@
 		<property name="maxIdleTime" value="${c3p0.maxIdleTime}" />
 		<property name="maxStatements" value="${c3p0.maxStatements}" />
 	</bean>
-	<bean id="mySqlDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
-		destroy-method="close">
+	<bean id="mySqlDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
 		<property name="driverClass" value="${jdbc.mysql.driver}" />
 		<property name="jdbcUrl" value="${jdbc.mysql.url}" />
 		<property name="user" value="${jdbc.mysql.username}" />
