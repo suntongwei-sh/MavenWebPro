@@ -8,7 +8,7 @@
 </head>
 <body>
 <h2>welcome!!!</h2>
-<form action="http://localhost:8080/MavenWebPro/student.do" method="post">
+<form action="http://localhost:8080/MavenWebPro/student.do" method="get">
 <input type="submit" >
 </form>
 </body>

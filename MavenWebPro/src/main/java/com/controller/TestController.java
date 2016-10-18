@@ -16,7 +16,7 @@ import com.entity.Student;
 @RequestMapping("/test/")
 @Controller
 public class TestController {
-	@RequestMapping(value = "index_1.do", method = RequestMethod.POST)
+	@RequestMapping(value = "index_1.do", method = RequestMethod.GET)
 	public ModelAndView index_1() {
 		Response response = new Response();
 		response.success("gdfgfgd");
