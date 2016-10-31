@@ -1,7 +1,12 @@
 package com.controller;
 
 import java.util.ArrayList;
+import java.util.Enumeration;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
 
 import net.sf.json.JSONObject;
 
@@ -32,5 +37,19 @@ public class TestController {
 		mv.addObject("jsonst", jo.toString());
 		return mv;
 
+	}
+
+	// 获取url的所有参数
+	@RequestMapping("parameter.do")
+	public void outparameter(HttpServletRequest request) {
+		Enumeration<String> names = request.getParameterNames();
+		Map<String, Object> map = new HashMap<String, Object>();
+		while (names.hasMoreElements()) {
+			String string = (String) names.nextElement();
+			map.put(string, request.getParameter(string));
+
+		}
+		System.out.println(map.get("c"));
+		System.out.println(map.toString());
 	}
 }
